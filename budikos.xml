@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Budik OS: forks and additions on top of GrapheneOS -->
+<manifest>
+  <remote name="budikos" fetch="https://github.com/BudikOS/" />
+  <remove-project name="device/amlogic/yukawa" />
+  <remove-project name="device/amlogic/yukawa-kernel" />
+  <remove-project name="device/generic/art" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
+  <remove-project name="device/google_car" />
+  <remove-project name="device/linaro/dragonboard" />
+  <remove-project name="device/linaro/dragonboard-kernel" />
+  <remove-project name="device/linaro/hikey" />
+  <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="device/google/cuttlefish_vmm" />
+  <remove-project name="device_google_akita-kernels_6.1" />
+  <remove-project name="device_google_bluejay-kernels_6.1" />
+  <remove-project name="device_google_caimito-kernels_6.1" />
+  <remove-project name="device_google_comet-kernels_6.1" />
+  <remove-project name="device_google_felix-kernels_6.1" />
+  <remove-project name="device_google_laguna-kernels_6.6" />
+  <remove-project name="device_google_lynx-kernels_6.1" />
+  <remove-project name="device_google_pantah-kernels_6.1" />
+  <remove-project name="device_google_raviole-kernels_6.1" />
+  <remove-project name="device_google_shusky-kernels_6.1" />
+  <remove-project name="device_google_tangorpro-kernels_6.1" />
+  <remove-project name="device_google_tegu-kernels_6.1" />
+  <remove-project name="platform/hardware/invensense" />
+  <remove-project name="platform/hardware/samsung/nfc" />
+  <remove-project name="platform/hardware/st/secure_element" />
+  <remove-project name="platform/hardware/st/secure_element2" />
+  <remove-project name="platform/hardware/ti/am57x" />
+  <remove-project name="kernel/tests" />
+  <remove-project name="platform/test/catbox" />
+  <remove-project name="platform/test/cts-root" />
+  <remove-project name="platform/test/dittosuite" />
+  <remove-project name="platform/test/vts-testcase/nbu" />
+  <remove-project name="platform/test/vts-testcase/performance" />
+  <remove-project name="platform/test/vts-testcase/security" />
+  <remove-project name="platform/tools/test/connectivity" />
+  <remove-project name="platform/tools/test/mobly_snippets" />
+  <remove-project name="platform/tools/test/openhst" />
+  <remove-project name="platform_packages_modules_Virtualization" />
+  <remove-project name="platform_packages_apps_LogViewer" />
+  <remove-project name="platform_packages_apps_SetupWizard2" />
+  <remote name="lineage" fetch="https://github.com/LineageOS/" />
+  <project path="packages/apps/Browser2" name="platform/packages/apps/Browser2" remote="aosp" revision="refs/tags/android-17.0.0_r1" clone-depth="1" />
+  <project path="prebuilts/vndk/v28" name="platform/prebuilts/vndk/v28" remote="aosp" revision="204f1bad00aaf480ba33233f7b8c2ddaa03155dd" clone-depth="1" />
+  <project path="prebuilts/vndk/v30" name="platform/prebuilts/vndk/v30" remote="aosp" revision="5f9884aa352825291757dfd6694b874ad8c1805e" clone-depth="1" />
+  <remove-project name="platform_bionic" />
+  <project path="bionic" name="platform_bionic" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_bootable_recovery" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_build" />
+  <project path="build/make" name="platform_build" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_build_release" />
+  <project path="build/release" name="platform_build_release" remote="budikos" revision="budik-17" />
+  <remove-project name="device/generic/common" />
+  <project path="device/generic/common" name="device_generic_common" remote="budikos" revision="budik-17" />
+  <remove-project name="device/generic/trusty" />
+  <project path="device/generic/trusty" name="device_generic_trusty" remote="budikos" revision="budik-17" />
+  <remove-project name="platform/external/openthread" />
+  <project path="external/openthread" name="platform_external_openthread" remote="budikos" revision="budik-17" />
+  <remove-project name="platform/external/rust/android-crates-io" />
+  <project path="external/rust/android-crates-io" name="platform_external_rust_android-crates-io" remote="budikos" revision="budik-17" />
+  <remove-project name="platform/external/rust/crates/openssl" />
+  <project path="external/rust/crates/openssl" name="platform_external_rust_crates_openssl" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_external_selinux" />
+  <project path="external/selinux" name="platform_external_selinux" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_frameworks_av" />
+  <project path="frameworks/av" name="platform_frameworks_av" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_frameworks_base" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_frameworks_libs_systemui" />
+  <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_frameworks_native" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="budikos" revision="budik-17" />
+  <remove-project name="platform/frameworks/opt/net/ims" />
+  <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_frameworks_opt_telephony" />
+  <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_hardware_interfaces" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="budikos" revision="budik-17" />
+  <remove-project name="kernel/configs" />
+  <project path="kernel/configs" name="kernel_configs" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_packages_apps_Settings" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_packages_apps_SettingsIntelligence" />
+  <project path="packages/apps/SettingsIntelligence" name="platform_packages_apps_SettingsIntelligence" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_packages_apps_ThemePicker" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_packages_apps_WallpaperPicker2" />
+  <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_packages_modules_AppSearch" />
+  <project path="packages/modules/AppSearch" name="platform_packages_modules_AppSearch" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_packages_modules_Bluetooth" />
+  <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" remote="budikos" revision="budik-17" />
+  <remove-project name="platform/packages/modules/CaptivePortalLogin" />
+  <project path="packages/modules/CaptivePortalLogin" name="platform_packages_modules_CaptivePortalLogin" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_packages_modules_Connectivity" />
+  <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" remote="budikos" revision="budik-17" />
+  <remove-project name="platform/packages/modules/DeviceLock" />
+  <project path="packages/modules/DeviceLock" name="platform_packages_modules_DeviceLock" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_packages_modules_DnsResolver" />
+  <project path="packages/modules/DnsResolver" name="platform_packages_modules_DnsResolver" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_packages_modules_RemoteKeyProvisioning" />
+  <project path="packages/modules/RemoteKeyProvisioning" name="platform_packages_modules_RemoteKeyProvisioning" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_packages_modules_Wifi" />
+  <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" remote="budikos" revision="budik-17" />
+  <remove-project name="platform/packages/modules/common" />
+  <project path="packages/modules/common" name="platform_packages_modules_common" remote="budikos" revision="budik-17" />
+  <remove-project name="platform/packages/modules/vndk" />
+  <project path="packages/modules/vndk" name="platform_packages_modules_vndk" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_packages_providers_DownloadProvider" />
+  <project path="packages/providers/DownloadProvider" name="platform_packages_providers_DownloadProvider" remote="budikos" revision="budik-17" />
+  <remove-project name="platform/prebuilts/sdk" />
+  <project path="prebuilts/sdk" name="platform_prebuilts_sdk" remote="budikos" revision="budik-17" />
+  <project path="prebuilts/vndk/v29" name="platform_prebuilts_vndk_v29" remote="budikos" revision="budik-17" />
+  <remove-project name="platform/system/apex" />
+  <project path="system/apex" name="platform_system_apex" remote="budikos" revision="budik-17" />
+  <remove-project name="platform/system/bpf" />
+  <project path="system/bpf" name="platform_system_bpf" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_system_core" />
+  <project path="system/core" name="platform_system_core" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_system_extras" />
+  <project path="system/extras" name="platform_system_extras" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_system_fs_fs_mgr" />
+  <project path="system/fs/fs_mgr" name="platform_system_fs_fs_mgr" remote="budikos" revision="budik-17" />
+  <remove-project name="platform/system/linkerconfig" />
+  <project path="system/linkerconfig" name="platform_system_linkerconfig" remote="budikos" revision="budik-17" />
+  <remove-project name="platform/system/memory/lmkd" />
+  <project path="system/memory/lmkd" name="platform_system_memory_lmkd" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_system_netd" />
+  <project path="system/netd" name="platform_system_netd" remote="budikos" revision="budik-17" />
+  <remove-project name="platform/system/security" />
+  <project path="system/security" name="platform_system_security" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_system_sepolicy" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="budikos" revision="budik-17" />
+  <remove-project name="platform_system_vold" />
+  <project path="system/vold" name="platform_system_vold" remote="budikos" revision="budik-17" />
+  <remove-project name="platform/test/vts-testcase/hal" />
+  <project path="test/vts-testcase/hal" name="platform_test_vts-testcase_hal" remote="budikos" revision="budik-17" />
+  <remove-project name="trusty/device/desktop" />
+  <project path="trusty/device/desktop" name="trusty_device_desktop" remote="budikos" revision="budik-17" />
+  <remove-project name="trusty/vendor/google/aosp" />
+  <project path="trusty/vendor/google/aosp" name="trusty_vendor_google_aosp" remote="budikos" revision="budik-17" />
+  <project path="vendor/apn" name="android_vendor_apn" remote="budikos" revision="budik-17" />
+  <project path="packages/apps/QcRilAm" name="packages_apps_QcRilAm" remote="budikos" revision="budik-17" />
+  <project path="vendor/lptools" name="vendor_lptools" remote="budikos" revision="budik-17" />
+  <project path="vendor/magisk" name="vendor_magisk" remote="budikos" revision="budik-17" />
+  <project path="vendor/vndk-tests" name="vendor_vndk-tests" remote="budikos" revision="budik-17" />
+  <project path="vendor/pixel/gsans" name="vendor_pixel_gsans" remote="budikos" revision="budik-17" />
+  <project path="vendor/hardware_overlay" name="vendor_hardware_overlay" remote="budikos" revision="budik-17" />
+  <project path="vendor/interfaces" name="vendor_interfaces" remote="budikos" revision="budik-17" />
+  <project path="budikos" name="budik-os" remote="budikos" revision="main">
+    <linkfile src="vendor/budikos" dest="vendor/budikos" />
+  </project>
+</manifest>
